@@ -78,12 +78,12 @@ Numbers can be represented by other primitive types, which ones you use depends 
 ### Variable Naming Conventions
 Java naming conventions are best practices to follow as you decide what to name your identifiers such as class, package, variable, constant, method etc.  For variables, java conventions are;
 
-* should start with lowercase letter e.g. firstName, orderNumber etc.
-* camelcase - If name is combined with two words, second word will start with uppercase letter always e.g. `firstName`, lastName`, `postalCode`.
-* variable names should be meaningful (descriptive).  i.e int numberOfCars, not int n
+* should start with lowercase letter e.g. `firstName`, `orderNumber` etc.
+* `camelCase` - If name is combined with two words, second word will start with uppercase letter always e.g. `firstName`, lastName`, `postalCode`.
+* variable names should be meaningful (descriptive).  i.e `int numberOfCars`, not `int n`
 
-#### One More Convention
-While you can name your variables whatever you want, following the conventions above of course, one more convention we will use is the use of a prefix. We include prefixes in your variables to make it clear what data type the variable represents.
+### House Style: Data Type Prefixes
+In some circles, it's also good practice to include the use of a prefix describing the variable's data type. For example:
 
 |data type|prefix|example|
 |---|---|---|
@@ -93,10 +93,14 @@ While you can name your variables whatever you want, following the conventions a
 |`boolean`|`bln`|`blnIsHungry`|
 |`String`|`str`|`strFirstName`|
 
+By describing the data type in the variable name itself, it is even clearer what the variable is supposed to represent.
+
+Note that the use of this prefix is not universal, so best to make sure you follow the specific style guidelines described by your organization.
+
+### Summary
+
 Good variables names have these benefits:
 * More organized because if you have lots of lines of code, it is easier to find a good variable name VS `x`, `y`, `z`
 * Variable name reflects the content.
 * Reduce the risk of having duplicate variable names
 * Your coworker reading your code will immediately know that data goes in there and the type.
-
-
